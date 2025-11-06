@@ -1,9 +1,10 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,   // ✅ use environment variable
-  withCredentials: true                   // ✅ allow cookies if you use login tokens
-})
+  baseURL: process.env.REACT_APP_API_URL,
+  withCredentials: true
+});
 
-export default API
+export default API;
+
 
